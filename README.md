@@ -4,7 +4,7 @@ It's work in progress, so please do not use it.
 
 
 # Requirements
-- Ghost `admin api key'. Please create new one on `{YOUR GHOST API URL}/ghost/#/settings/integrations/new`.
+- Ghost `admin api key`. Please create new one on `{YOUR GHOST API URL}/ghost/#/settings/integrations/new`.
 
 # Install
 Add `:ghostex` to your project deps:
