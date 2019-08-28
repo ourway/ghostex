@@ -39,6 +39,7 @@ defmodule Ghostex.MixProject do
       {:jason, ">= 0.0.0"},
       {:gen_smtp, "~> 0.13"},
       {:credo, "~> 1.0", only: [:dev, :test], runtime: false},
+      {:dialyxir, "~> 1.0.0-rc.6", only: [:dev], runtime: false},
       {:ex_doc, ">= 0.0.0", only: :dev, runtime: false}
     ]
   end
