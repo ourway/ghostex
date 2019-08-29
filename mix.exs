@@ -25,7 +25,7 @@ defmodule Ghostex.MixProject do
     # These are the default files included in the package
     [
       name: :ghostex,
-      files: ["lib", "mix.exs", "README*", "config", "test"],
+      files: ["lib", "mix.exs", "README*", "test"],
       maintainers: ["Farsheed Ashouri"],
       licenses: ["MIT License"],
       links: %{"GitHub" => "https://github.com/ourway/ghostex"}
