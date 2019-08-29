@@ -7,6 +7,7 @@ defmodule Ghostex.Application do
 
   def start(_type, _args) do
     children = [
+      :hackney_pool.child_spec(:ghostex_pool, timeout: 15_000, max_connections: 100)
       # Starts a worker by calling: Ghostex.Worker.start_link(arg)
       # {Ghostex.Worker, arg}
     ]

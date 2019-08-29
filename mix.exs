@@ -10,6 +10,13 @@ defmodule Ghostex.MixProject do
       deps: deps(),
       description: "Ghostex is Ghost blog client library for Elixir",
       source_url: "https://github.com/ourway/ghostex",
+      test_coverage: [tool: ExCoveralls],
+      preferred_cli_env: [
+        coveralls: :test,
+        "coveralls.detail": :test,
+        "coveralls.post": :test,
+        "coveralls.html": :test
+      ],
       package: package()
     ]
   end
@@ -36,10 +43,13 @@ defmodule Ghostex.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
+      {:joken, "~> 2.0"},
       {:jason, ">= 0.0.0"},
+      {:httpoison, "~> 1.5"},
       {:gen_smtp, "~> 0.13"},
       {:credo, "~> 1.0", only: [:dev, :test], runtime: false},
       {:dialyxir, "~> 1.0.0-rc.6", only: [:dev], runtime: false},
+      {:excoveralls, "~> 0.10", only: :test},
       {:ex_doc, ">= 0.0.0", only: :dev, runtime: false}
     ]
   end
