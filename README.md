@@ -1,9 +1,12 @@
 # ghostex
+
+[![Build Status](https://travis-ci.org/ourway/ghostex.svg?branch=master)](https://travis-ci.org/ourway/ghostex)
+
+
 Ghost blog client library for Elixir.
-It's work in progress, so please do not use it.
+It's work in progress.
 This library only suppors `post` at the moment.
 I have plans to develop a complete API, but for now it's limited.
-
 
 # Requirements
 - Ghost `admin api key`. Please create new one on `{YOUR GHOST API URL}/ghost/#/settings/integrations/new`.
