@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Admin API key goes here
-KEY="5d6659ea929dcb000170ae42:e4bbce954fdf9f4767284c2b101059265234665d7f97be88e56f96753e0e6c91"
+KEY="dcb000170ae42:e4bbce954fdf9f476265234665d7f97be88e56f96753e0e6c91"
 
 # Split the key into ID and SECRET
 TMPIFS=$IFS
